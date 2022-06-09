@@ -1,9 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:ui/reusables/constant.dart';
 import 'package:ui/reusables/icons.dart';
-import 'package:ui/reusables/sizedboshelper.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -28,23 +25,21 @@ class Home extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
 
-class MyRow extends StatelessWidget {
-  const MyRow({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: <Widget>[
-        CircleAvatar(child: ResuableIcon(icon: Icons.menu)),
-        CircleAvatar(child: ResuableIcon(icon: Icons.mark_email_unread)),
-      ],
+// This sectioin will be refactored twomorrow
+//the Icons should be a reusable Icon a
+//All Strings and numbers should be refactored also
+      floatingActionButton:
+          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+        Icon(Icons.home),
+        Icon(
+          Icons.search,
+          size: 70.0,
+        ),
+        Icon(
+          Icons.favorite_outline_outlined,
+        )
+      ]),
     );
   }
 }
