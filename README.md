@@ -3,11 +3,20 @@
 A new Flutter project.
 
 ## Getting Started  
+first screen Completed 
+
+![image](https://user-images.githubusercontent.com/26329848/173110628-2c42a02b-daf4-4905-af75-b00c4df15ed9.png) 
 
 
+first screen in progress
+![image](https://user-images.githubusercontent.com/26329848/172737934-edc41e2b-a5dc-4812-8691-27c84e44f47c.png)
+
+
+first screen in progress
 ![image](https://user-images.githubusercontent.com/26329848/171634519-b1150902-f449-4524-93e0-3840d3019c9b.png)
 
-![image](https://user-images.githubusercontent.com/26329848/172737934-edc41e2b-a5dc-4812-8691-27c84e44f47c.png)
+
+
 
 
 
