@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../reusables/reusabletext.dart';
 import '../../reusables/sizedboshelper.dart';
 
-
 class bodyRow extends StatelessWidget {
   const bodyRow({
     Key? key,
@@ -14,50 +13,41 @@ class bodyRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       crossAxisAlignment: CrossAxisAlignment.center,
+
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Reusabletext(
-              text: "LifeStyle ",
-              weight: FontWeight.bold,
-            ),
-            Reusabletext(
-              color: Colors.redAccent,
-              text: " 35 items",
-              weight: FontWeight.normal,
-            ),
-          ],
+        Expanded(
+          child: Column(
+            children: [
+              Reusabletext(
+                text: "LifeStyle ",
+                weight: FontWeight.bold,
+              ),
+              Reusabletext(text: '35 Items')
+            ],
+          ),
         ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Reusabletext(
-              text: " Running ",
-              weight: FontWeight.bold,
-            ),
-            Reusabletext(
-              color: Colors.redAccent,
-              text: " 41 items",
-              weight: FontWeight.normal,
-            ),
-          ],
+        Expanded(
+          child: Column(
+            children: [
+              Reusabletext(
+                text: "LifeStyle ",
+                weight: FontWeight.bold,
+              ),
+              Reusabletext(text: '35 Items')
+            ],
+          ),
         ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Reusabletext(
-              text: " Tennis ",
-              weight: FontWeight.bold,
-            ),
-            Reusabletext(
-              color: Colors.redAccent,
-              text: " 18 items",
-              weight: FontWeight.normal,
-            ),
-          ],
-        ),
-        const AddVerticalSpace(height: 30.0),
+        Expanded(
+          child: Column(
+            children: [
+              Reusabletext(
+                text: "LifeStyle ",
+                weight: FontWeight.bold,
+              ),
+              Reusabletext(text: '35 Items')
+            ],
+          ),
+        )
       ],
     );
   }

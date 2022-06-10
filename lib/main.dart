@@ -25,9 +25,10 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       theme: ThemeData.light(),
-      home: Scaffold(
+      home: const Scaffold(
         body: Home(),
       ),
     );
+   
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui/reusables/reusabletext.dart';
 import 'package:ui/reusables/sizedboshelper.dart';
+import 'package:ui/screens/body/stackCard.dart';
 import '../screens/body/bodyRow.dart';
 import '../screens/body/card.dart';
 import '../screens/top/homeRow.dart';
@@ -21,8 +22,12 @@ List<Widget> bodyChildren = [
   AddVerticalSpace(
     height: heigth10,
   ),
-  const AddVerticalSpace(height: 20.0),
-  bodyRow(),
-  const AddVerticalSpace(height: 30.0),
-  
+  const AddVerticalSpace(height: 10.0),
+  const bodyRow(),
+  Expanded(
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [StarkCard(), AddVerticalSpace(height: 20.0), StarkCard()],
+    ),
+  ),
 ];

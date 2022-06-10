@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/reusables/constant.dart';
-import 'package:ui/reusables/icons.dart';
+import 'package:ui/screens/bottom/bottomIcon.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -26,20 +26,47 @@ class Home extends StatelessWidget {
         ),
       ),
 
-// This sectioin will be refactored twomorrow
-//the Icons should be a reusable Icon a
-//All Strings and numbers should be refactored also
-      floatingActionButton:
-          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-        Icon(Icons.home),
-        Icon(
-          Icons.search,
-          size: 70.0,
-        ),
-        Icon(
-          Icons.favorite_outline_outlined,
-        )
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home,
+            color: Colors.black,
+            ),
+            
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+              size: 70.0,
+              color: Colors.black,
+            ),
+            label: 'search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite_outline_outlined,
+              color: Colors.black,
+            ),
+            label: 'School',
+          ),
+        ],
+        selectedItemColor:  Colors.cyan.shade50,
+       
+      ),
+    
+      // floatingActionButton: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+        // BottomIcon(
+        //   icon: Icons.home_sharp,
+        // ),
+      //   BottomIcon(
+      //     icon: Icons.search,
+      //     size: 70.0,
+      //   ),
+      //   BottomIcon(
+      //     icon: Icons.favorite_outline_outlined,
+      //   ),
+      // ]),
     );
   }
 }
